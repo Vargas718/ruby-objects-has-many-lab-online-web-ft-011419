@@ -13,7 +13,7 @@ class Post
   def author_name
     self == author ? author : nil
   
-  binding.pry
+  #binding.pry
   end
   
   
