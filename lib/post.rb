@@ -11,7 +11,7 @@ class Post
   end
   
   def author_name
-    self.include?(author) ? author : nil
+    self == author ? author : nil
   
   binding.pry
   end
