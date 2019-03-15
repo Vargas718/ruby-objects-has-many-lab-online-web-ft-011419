@@ -11,12 +11,9 @@ class Post
   end
   
   def author_name
-   if author.name == author
-     author.name
-   else
-     nil 
-   end 
-    author.name
+    author
+  
+  binding.pry
   end
   
   
