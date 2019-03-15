@@ -3,32 +3,32 @@ require "pry"
 class Artist 
   attr_accessor :name
   
-  @@songs = []
+  @@all = []
   
   def initialize(name)
     @name = name 
   end
   
   def songs
-    @@songs
+    @@all
   end 
   
   def add_song(song)
     
-    @@songs << song
+    @@all << song
     song.artist = self
     #binding.pry
   end
   
   def add_song_by_name(title)
     track = Song.new(title) 
-    @@songs << track
+    @@all << track
     track.artist = self
     #binding.pry
    end
    
     def self.song_count
-     @@songs.size
+     @@all.size
      #binding.pry
     end 
    
