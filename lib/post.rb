@@ -11,8 +11,7 @@ class Post
   end
   
   def author_name
-    title.include?(author) ?  author : nil
-  
+    author
   binding.pry
   end
   
