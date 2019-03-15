@@ -11,7 +11,7 @@ class Post
   end
   
   def author_name
-    author == author ? author : nil
+    author.name == author.name ? author.name : nil
   
   #binding.pry
   end
